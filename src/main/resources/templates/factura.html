@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<meta
+	content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+	name="viewport" />
+<meta content="ie=edge" http-equiv="X-UA-Compatible" />
+<title>Spring Boot - Thymeleaf</title>
+<link th:href="@{main.css}" rel="stylesheet" />
+</head>
+<body class="flex items-center justify-center h-screen">
+
+
+	<div class="rounded-lg border shadow-lg p-10 w-3/5">
+		<div class="flex flex-row justify-between pb-4">
+			<div>
+				<h2 class="text-xl font-bold">
+					Order #<span class="text-green-600" th:text="${order}"></span>
+				</h2>
+			</div>
+			<div>
+				<div class="text-xl font-bold" th:text="${total}"></div>
+			</div>
+		</div>
+
+		<table class="table-fixed w-full text-right border rounded">
+			<tr th:each="item : ${items}">
+				<td><small class="my-0" th:text="${item.name}"></small></td>
+				<td><small class="text-muted" th:text="${item.quantity}"></small></td>
+				<td><small class="text-muted" th:text="${item.price}"></small></td>
+				<td><small class="pr-4" th:text="${item.price * item.quantity}"></small>
+				</td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>

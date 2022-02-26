@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" th:href="@{responsive.css}" />
+<!-- Based on the reponsive design example found at https://www.w3schools.com/css/css_rwd_intro.asp -->
+</head>
+<body>
+
+	<div class="container">
+
+		<div class="aside">
+			<img th:src="${imagen}" width="150" height="150" alt="">
+		</div>
+		<div class="acenter">
+			<img th:src="@{image/LOGO.png}" class="responsive" width="300"
+				height="300" alt="">
+		</div>
+	</div>
+	<div class="container">
+		<h2>Some filler text</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+			Praesent ex arcu, varius a lorem et, malesuada tempor massa. Aenean
+			elementum rutrum risus vel ultrices. Suspendisse lacinia elit ac
+			purus fringilla porta. Fusce feugiat metus eget metus accumsan porta.
+			Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+			posuere cubilia Curae; In hac habitasse platea dictumst. Cras semper
+			mi ullamcorper velit molestie tempus.</p>
+		<p>Curabitur pulvinar tellus quis maximus tristique. Praesent id
+			aliquet tellus. Quisque in ipsum ut metus sagittis sollicitudin et
+			sit amet dolor. Maecenas vitae tempor felis. Proin convallis justo ac
+			rutrum bibendum. Suspendisse malesuada tincidunt varius. Phasellus
+			non malesuada magna. Phasellus iaculis hendrerit neque, sit amet
+			elementum velit fringilla sit amet. Suspendisse risus nunc, hendrerit
+			id laoreet eget, tempus ut sem. In hac habitasse platea dictumst.
+			Aliquam erat volutpat. Maecenas iaculis augue a eros sagittis, ac
+			lacinia metus faucibus.</p>
+		<p>Aenean in bibendum justo. Curabitur et mi tempus nibh aliquam
+			congue. Praesent venenatis est sit amet mauris egestas accumsan.
+			Proin fringilla leo enim, sit amet euismod justo pellentesque ut.
+			Etiam dignissim nulla id dui porta posuere. Etiam posuere pulvinar
+			suscipit. Donec consectetur massa at posuere finibus. Cras sit amet
+			enim commodo, molestie urna condimentum, vestibulum justo. Mauris
+			viverra pulvinar ipsum, non sodales ligula maximus et. Mauris libero
+			leo, ultricies sit amet est non, venenatis pellentesque urna.
+			Vestibulum tincidunt mauris ac posuere laoreet. Vivamus consectetur
+			nisl elit, id euismod neque scelerisque non. Praesent tincidunt
+			malesuada tristique. Aliquam sed leo tincidunt tortor facilisis
+			convallis. Donec quis aliquam velit.</p>
+
+	</div>
+</body>
+</html>
